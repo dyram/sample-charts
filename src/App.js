@@ -5,7 +5,8 @@ import "./App.css";
 import BarMain from "./components/BarGraph/BarMain";
 import NivoBar from "./components/NivoGraph/NivoBar";
 
-import FirstPerson from "./components/ChatBox/FirstPerson";
+// import FirstPerson from "./components/ChatBox/FirstPerson";
+import VideoPlayer from "./components/XstatePlayer/Player";
 
 function App() {
   const layout = [
@@ -39,7 +40,11 @@ function App() {
         </div>
       </GridLayout>
       <br />
-      <FirstPerson />
+      {/* This is the chat using RxJs */}
+      {/* <FirstPerson /> */}
+
+      {/* VideoPlayer using Xstate */}
+      <VideoPlayer />
     </div>
   );
 }
